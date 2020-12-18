@@ -34,6 +34,14 @@ body {
   cursor: pointer;
 }
 
+
+.call_intro{
+  font-size: 42px;
+  text-align:center;
+  font-family: serif;
+  font-style: italic;
+}
+
 /*Table CSS*/
 #Dicresults {
   margin-top:20px;
