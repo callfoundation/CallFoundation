@@ -36,10 +36,16 @@ body {
 
 
 .call_intro{
-  font-size: 42px;
+  font-size: 35px;
   text-align:center;
   font-family: serif;
   font-style: italic;
+}
+
+.call_intro p{
+margin: 0
+padding-top:0.5px;
+color:blue;
 }
 
 /*Table CSS*/
