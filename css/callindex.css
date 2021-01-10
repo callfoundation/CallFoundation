@@ -34,6 +34,10 @@ body {
   cursor: pointer;
 }
 
+#header_index{
+  font-size: 30px;
+  width: 100%
+}
 
 .call_intro{
   font-size: 35px;
