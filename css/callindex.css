@@ -64,6 +64,25 @@ color:black;
   font-family: serif;
   font-style: italic;
 }
+.donate_now {
+   padding: 30px 0;
+  
+  text-align: center;
+}
+
+#don_now{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
 /*Table CSS*/
 #Dicresults {
   margin-top:20px;
