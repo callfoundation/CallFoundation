@@ -14,14 +14,31 @@
 		* {
 		  box-sizing: border-box;
 		}	
+		.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
 			.column {
 		
       float: left;
       width: 50%;
-      padding-left: 200px;
-      padding-right: 200px;
+      text-align: center;
+
+      /*padding-left: 200px;
+      padding-right: 200px;*/
     }
+    .column li{
+		
+      
+      text-align: Left;
+      margin-top: 10px; 
+      
+      /*padding-left: 200px;
+      padding-right: 200px;*/
+    }
+
 
     /* Clear floats after the columns */
     .row:after {
@@ -61,7 +78,7 @@
 
 <body>
 	<div class="topnav" id="myTopnav">
-    <a> <img src="images/logo.jpg" width='20px', height='18px'> </a>
+	  <a> <img src="images/logo.jpg" width='20px', height='18px'> </a>
       <a href="index.html" class="active">Home</a>
       <a href="about_us.html">About Us</a>
       <a href="gallery.html">Gallery</a>
@@ -71,11 +88,34 @@
       <a href="contact_us.html">Contact us</a>
       <a href="javascript:void(0);" class="icon" onclick="topnavbar()">☰</a>
 	</div>
-		
-<div class="cont_us_img">
+	
 
-<img src="images/cont_us.jpg" > 
+
+
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Nutrition Program</h2>
+    <p>Under Maintenance</p>
+  </div>
+  
+
+
+
+
+<!-- education scholorship -->
+  <div class="column" style="background-color:#bbb;">
+    <h2>Education Scholorships</h2>
+    <ul>
+    	<li>Objective of CALL foundation is to ensure economically poor children are provided access to education</li>
+    	<li>This initiative will transform their life and improve the self esteem of their family</li>
+    	<li>Students in turn become leaders with clear purpose and lead their life</li>
+    </ul>
+  </div>
 </div>
+
+
 
 
 <center>
@@ -89,7 +129,7 @@
 		<div class="columnfoot" >
 			<p>
 			<a href="index.html">Home</a>
-			<a href="index.html"style="margin-left:20px">Contact Us</a>
+			<a href="contact_us.html"style="margin-left:20px">Contact Us</a>
 		</p>
 
 		</div>
@@ -106,7 +146,4 @@
 
 
 </html>
-
-
-
 

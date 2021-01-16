@@ -1,39 +1,58 @@
-<!Doctype html>
+
+
+
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="description" content="CallFoundation">
-		<meta name="keywords" content="CallFoundation,Call foundation">
-		<meta name="author" content="CallFoundation">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Call Foundation</title>
-		<link rel="shortcut icon" href="images/logo.jpg">
-		<link rel="stylesheet" type="text/css" href="css/callindex.css">	
-		<script src="js/calltopnav.js"></script>	
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="CallFoundation">
+    <meta name="keywords" content="CallFoundation,Call foundation">
+    <meta name="author" content="CallFoundation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Foundation</title>
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="css/callindex.css">  
+    <script src="js/calltopnav.js"></script>  
 
-		<style>
-		* {
-		  box-sizing: border-box;
-		}	
-		img {vertical-align: middle;}
-		.mySlides {display: none}
+<style>
+* {
+  box-sizing: border-box;
+}
 
-			.column {
-		
-      float: left;
-      width: 50%;
-      padding-left: 200px;
-      padding-right: 200px;
-    }
+body {
+  /*margin: 0;*/
+  
+}
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+.header {
+  text-align: center;
+  padding: 32px;
+}
 
-	.columnfoot {
-		
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+  .columnfoot {
+    
       float: left;
       width: 50%;
     }
@@ -45,231 +64,100 @@
       clear: both;
     }
 
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-      width: 100%;
-      }
-      .columnfoot {
-      width: 100%;
-      }
-      .indeximg123{
-      margin-top:30px;}
-    }
-    }
-
-
-
-    .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-
-
-
-
-		</style>
+</style>
 </head>
-
 <body>
-	<div class="topnav" id="myTopnav">
-			<a> <img src="images/logo.jpg" width='20px', height='18px'> </a>
-			<a href="index.html" class="active">Home</a>
-			<a href="about_us.html">About Us</a>
-			<a href="gallery.html">Gallery</a>
-			<a href="contact_us.html">Contact us</a>
-			<a href="javascript:void(0);" class="icon" onclick="topnavbar()">☰</a>
-	</div>
-		
-<!-- <div>
-<img src="images/call_gall.jpg" > 
+
+<!-- Header -->
+<div class="topnav" id="myTopnav">
+    
+    <a> <img src="images/logo.jpg" width='20px', height='18px'> </a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="activities.html">Activities</a>
+      <a href="service.html">Service</a>
+      <a href="leadership.html">Leadership Team</a>
+      <a href="contact_us.html">Contact us</a>
+      <a href="javascript:void(0);" class="icon" onclick="topnavbar()">☰</a>
+  </div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/gal_slide/1.jpeg" style="width:100%">
+    <img src="images/gal_slide/2.jpeg" style="width:100%">
+    <img src="images/gal_slide/3.jpeg" style="width:100%">
+     <img src="images/gal_slide/4.jpeg" style="width:100%">
+    <img src="images/gal_slide/5.jpeg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="images/gal_slide/11.jpeg" style="width:100%">
+    <img src="images/gal_slide/12.jpeg" style="width:100%">
+    <img src="images/gal_slide/13.jpeg" style="width:100%">
+    <img src="images/gal_slide/14.jpeg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/gal_slide/19.jpeg" style="width:100%">
+    <img src="images/gal_slide/16.jpeg" style="width:100%">
+    <img src="images/gal_slide/17.jpeg" style="width:100%">
+    <img src="images/gal_slide/18.jpeg" style="width:100%">
+  </div>
+  <div class="column">
+      <img src="images/gal_slide/6.jpeg" style="width:100%">
+    <img src="images/gal_slide/7.jpeg" style="width:100%">
+    <img src="images/gal_slide/8.jpeg" style="width:100%">
+    <img src="images/gal_slide/9.jpeg" style="width:100%">
+    <img src="images/gal_slide/10.jpeg" style="width:100%">
+  </div>
 </div>
- -->
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <img src="images/gal_slide/1.jpeg" height="500" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <img src="images/gal_slide/2.jpeg" height="500" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <img src="images/gal_slide/3.jpeg " height="500" style="width:100%">
-  
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <img src="images/gal_slide/call_gall.jpg" height="500" style="width:100%">
-  
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 
 
 <center>
 <div  style="background-color:black;line-height: 50px;vertical-align: middle;color:white;">
-	<div class="rowfoot">
-		<div class="columnfoot">
-			
-				<p>© 2020 Call Foundation All Rights Reserved.</p>
-			
-		</div>
-		<div class="columnfoot" >
-			<p>
-			<a href="index.html">Home</a>
-			<a href="contact_us.html"style="margin-left:20px">Contact Us</a>
-		</p>
+  <div class="rowfoot">
+    <div class="columnfoot" >
+      
+        <p>© 2020 Call Foundation All Rights Reserved.</p>
+      
+    </div>
+    <div class="columnfoot" >
+      <p>
+      <a href="index.html">Home</a>
+      <a href="contact_us.html"style="margin-left:20px">Contact Us</a>
+    </p>
+    </div>
 
-		</div>
-	</div>
+  </div>
 </div>
-
 </center>
 
-
-
 </body>
-
-
-
-
 </html>
+
+
+
+
+
 
 
 
