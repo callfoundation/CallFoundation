@@ -59,7 +59,30 @@
       display: table;
       clear: both;
     }
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
 
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
@@ -92,12 +115,14 @@
 
 
 
-
+<!-- Nutrition Program -->
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column" style="background-color:#aaa; height:400px ;">
     <h2>Nutrition Program</h2>
-    <p>Under Maintenance</p>
+    <p>Under Nutrition program we serve food to orphans and famished people.</p>
+    <br>
+    <img src="images/act_images/2.jpeg" style="width:50%" height="200px">
   </div>
   
 
@@ -105,14 +130,28 @@
 
 
 <!-- education scholorship -->
-  <div class="column" style="background-color:#bbb;">
+  <div class="column" style="background-color:#bbb;height: 400px;">
     <h2>Education Scholorships</h2>
+    <br><br>
     <ul>
     	<li>Objective of CALL foundation is to ensure economically poor children are provided access to education</li>
     	<li>This initiative will transform their life and improve the self esteem of their family</li>
     	<li>Students in turn become leaders with clear purpose and lead their life</li>
     </ul>
   </div>
+</div>
+
+
+<div class="feedback_sec" style="background-color: #bb6; margin-top: -35px ">
+	<p style="text-align: center; font-size: 35px; font-weight: bold;"> Success Stories</p>
+<center>
+	<div class="container" style="width: 80%;">
+  <img src="images/act_images/1.jpeg" alt="Avatar" style="width:90px">
+  <p><span>Sharath.</span> </p>
+  <p style="font-style: italic;	">I will be the first graduate in my family. My education will remove poverty and bring happiness to our family. I thank Call foundation</p>
+</div>
+</center>	
+	<br>
 </div>
 
 
@@ -126,9 +165,11 @@
 				<p>© 2020 Call Foundation All Rights Reserved.</p>
 			
 		</div>
+
 		<div class="columnfoot" >
 			<p>
-			<a href="index.html">Home</a>
+			<a href="donate.html" style="border-style: solid; padding: 10px; background-color: #00ff00 ">Donate now</a>
+			<a href="index.html" style="margin-left:40px">Home</a>
 			<a href="contact_us.html"style="margin-left:20px">Contact Us</a>
 		</p>
 
